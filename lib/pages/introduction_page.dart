@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:marry_me/widgets/default_appbar_widget.dart';
 import 'package:marry_me/widgets/introduction_card_widget.dart';
 
 class Introduction extends StatefulWidget {
@@ -12,27 +13,11 @@ class _IntroductionState extends State<Introduction> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text('Marry Me'),
-        leading: IconButton(
-          icon: const Icon(Icons.account_circle),
-          onPressed: () {},
-        ),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.favorite),
-            onPressed: () {},
-          ),
-          IconButton(
-            icon: const Icon(Icons.notifications),
-            onPressed: () {},
-          ),
-        ],
-      ),
+      appBar: const DefaultAppBar(),
       body: Column(
-        children: [
-          IntroductionCard(),
+        children: const [
+          IntroductionCard(primaryProfile: '장영연 (31)', secondaryProfile: '프로그래머, 강남구, 182cm, 통통'),
+          IntroductionCard(primaryProfile: '김현수 (31)', secondaryProfile: '프로그래머, 송파, 180cm, 마름'),
         ],
       ),
     );
