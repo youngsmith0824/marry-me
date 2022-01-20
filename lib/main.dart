@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:marry_me/pages/introduction_page.dart';
+import 'package:marry_me/pages/login_page.dart';
+import 'package:marry_me/pages/self_introduction_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,6 +9,8 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
+
+  // 사진 스크롤, 로그인 화면, 좋아요 리스트, 하트 페이지
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +22,12 @@ class MyApp extends StatelessWidget {
           color: Color(0xFF57d8ff),
         ),
       ),
-      home: Introduction(),
+      initialRoute: '/login',
+      routes: {
+        '/login': (context) => Login(),
+        '/introduction': (context) => Introduction(),
+        '/self-introduction': (context) => SelfIntroduction()
+      },
     );
   }
 }
