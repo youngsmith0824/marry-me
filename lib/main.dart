@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marry_me/pages/introduction_page.dart';
+import 'package:marry_me/pages/matching_page.dart';
 import 'package:marry_me/pages/login_page.dart';
 import 'package:marry_me/pages/self_introduction_page.dart';
 
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/login',
       routes: {
         '/login': (context) => const Login(),
-        '/introduction': (context) => const Introduction(),
+        '/matching': (context) => const Matching(),
         '/self-introduction': (context) => const SelfIntroduction()
       },
     );

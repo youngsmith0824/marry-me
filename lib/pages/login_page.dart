@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marry_me/pages/introduction_page.dart';
+import 'package:marry_me/pages/matching_page.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -107,7 +107,7 @@ class _LoginState extends State<Login> {
                       child: ElevatedButton(
                         onPressed: () {
                           Navigator.push(context,
-                              MaterialPageRoute(builder: (_) => Introduction()));
+                              MaterialPageRoute(builder: (_) => Matching()));
                         },
                         child: Text(
                           'Login',

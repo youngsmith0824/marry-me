@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:marry_me/widgets/default_appbar_widget.dart';
 import 'package:marry_me/widgets/introduction_card_widget.dart';
 
-class Introduction extends StatefulWidget {
-  const Introduction({Key? key}) : super(key: key);
+class Matching extends StatefulWidget {
+  const Matching({Key? key}) : super(key: key);
 
   @override
-  _IntroductionState createState() => _IntroductionState();
+  _MatchingState createState() => _MatchingState();
 }
 
-class _IntroductionState extends State<Introduction> {
+class _MatchingState extends State<Matching> {
   final List<IntroductionCard> colorCodes = const [
     IntroductionCard(primaryProfile: '장영연 (1)', secondaryProfile: '프로그래머, 강남구, 182cm, 통통'),
     IntroductionCard(primaryProfile: '김현수 (2)', secondaryProfile: '프로그래머, 송파, 180cm, 마름'),
